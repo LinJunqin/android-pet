@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/popup_menu_time_selector_1"
+        android:textSize="8dip"
+        android:title="9-11点"/>
+    <item
+        android:id="@+id/popup_menu_time_selector_2"
+        android:textSize="8dip"
+        android:title="11-13点"/>
+    <item
+        android:id="@+id/popup_menu_time_selector_3"
+        android:textSize="8dip"
+        android:title="14-16点"/>
+    <item
+        android:id="@+id/popup_menu_time_selector_4"
+        android:textSize="8dip"
+        android:title="16-18点"/>
+</menu>

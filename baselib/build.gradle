@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //ARouter 注解配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        sourceSets {
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.android.support:appcompat-v7:26.1.0'
+    api 'com.android.support:design:26.1.0'
+    api 'com.android.support.constraint:constraint-layout:1.0.2'
+    testApi 'junit:junit:4.12'
+    androidTestApi 'com.android.support.test:runner:1.0.2'
+    androidTestApi 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestApi('com.android.support:support-annotations:26.1.0') {
+        force = true
+    }
+    //网络相关框架 rxjava2 + retrofit2 + gson + MVP
+    api 'com.squareup.okhttp3:okhttp:3.6.0'
+    api 'com.google.code.gson:gson:2.8.0'
+    api 'io.reactivex.rxjava2:rxjava:2.0.7'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    api 'com.squareup.retrofit2:retrofit:2.2.0'
+    api 'com.squareup.retrofit2:converter-gson:2.2.0'
+    api 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+
+    // 图片加载框架
+    api 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    //ARouter路由
+    api 'com.alibaba:arouter-api:1.4.0'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.1'
+// 圆型头像
+    api 'de.hdodenhof:circleimageview:2.2.0'
+    // 今日头条屏幕适配框架
+    api 'me.jessyan:autosize:1.1.1'
+    // 状态栏适配
+    api 'com.gyf.immersionbar:immersionbar:2.3.3-beta09'
+    api project(':starLinearlayout')
+    api project(':DropDownMenu')
+    api project(':pickerview')
+    //权限框架
+    api('com.github.hotchemi:permissionsdispatcher:3.1.0') {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+
+
+}

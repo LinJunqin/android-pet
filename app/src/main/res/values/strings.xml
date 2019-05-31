@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">宠物</string>
+
+    <string name="tab_title_home">首页</string>
+    <string name="tab_title_hospital">门店</string>
+    <string name="tab_title_mine">我的</string>
+</resources>

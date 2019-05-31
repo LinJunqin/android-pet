@@ -1,0 +1,19 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 填充的颜色 -->
+    <stroke
+        android:color="@color/blue"
+        android:width="@dimen/search_border_width"
+        />
+    <!--背景颜色-->
+    <solid android:color="@color/white"/>
+    <!-- android:radius 圆角的半径 -->
+    <corners
+        android:topLeftRadius="@dimen/search_border_circle_angle"
+        android:topRightRadius="@dimen/search_border_circle_angle"
+        android:bottomRightRadius="@dimen/search_border_circle_angle"
+        android:bottomLeftRadius="@dimen/search_border_circle_angle"
+        />
+
+</shape>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--StarLinearLayout-->
+    <declare-styleable name="star">
+        <attr name="margin" format="dimension|reference"/>
+        <attr name="isEdit" format="boolean"/>
+        <attr name="score" format="float"/>
+    </declare-styleable>
+</resources>

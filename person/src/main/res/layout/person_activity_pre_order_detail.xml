@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的预约单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_word" />
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/baselib_ic_back" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_store_avatar"
+            android:layout_width="90sp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/person_avatar_default" />
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_toRightOf="@+id/iv_store_avatar"
+            android:layout_marginLeft="20dp"
+            android:text="美容院"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_store_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_store_name"
+            android:layout_toRightOf="@+id/iv_store_avatar"
+            android:layout_marginTop="10dp"
+            android:padding="2sp"
+            android:layout_marginLeft="20dp"
+            android:text="门店地址："
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:padding="2sp"
+            android:layout_marginRight="10dp"
+            android:text="预约成功"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_pre_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_store_address"
+            android:layout_toRightOf="@+id/iv_store_avatar"
+            android:padding="5sp"
+            android:layout_marginLeft="20dp"
+            android:text="预约时间：30.90"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_selector_border_blue"
+            android:text="取消预约"
+            android:layout_toLeftOf="@id/btn_comment"
+            android:layout_below="@id/tv_pre_order_time"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_selector_border_blue"
+            android:text="评价"
+            android:layout_below="@id/tv_pre_order_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+
+            android:layout_marginLeft="20dp"
+            android:text="预约服务"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_project"
+            android:layout_marginTop="10dp"
+            android:padding="2sp"
+            android:layout_marginLeft="20dp"
+            android:text="狗狗洗澡"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/tv_pre_store_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_project_name"
+            android:padding="5sp"
+            android:layout_marginLeft="20dp"
+            android:text="服务热线：65786587"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+
+
+
+    </RelativeLayout>
+</LinearLayout>

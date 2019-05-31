@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_view"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="信息管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_word" />
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/baselib_ic_back" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="8sp"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp"
+            android:text="头像"
+            android:textColor="#000000" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_pic"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30sp"
+            android:src="@drawable/person_avatar_default" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10sp"
+            android:text="用户名" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20sp"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="修改用户名"
+            android:singleLine="true"
+            android:textColor="#9a9a9a"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10sp"
+            android:text="性别" />
+
+        <EditText
+            android:id="@+id/et_gender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20sp"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="男或女"
+            android:singleLine="true"
+            android:textColor="#9a9a9a"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_info_address"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginTop="10sp"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10sp"
+            android:text="地址管理"
+            android:id="@+id/textView" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_address"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignBaseline="@+id/textView"-->
+            <!--android:layout_alignBottom="@+id/textView"-->
+            <!--android:layout_alignLeft="@+id/textView"-->
+            <!--android:layout_alignStart="@+id/textView"-->
+            <!--android:background="@null"-->
+            <!--android:gravity="center_vertical|right"-->
+            <!--android:hint="广东省揭阳市惠来县"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="#9a9a9a"-->
+            <!--android:textSize="15sp" />-->
+
+        <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5sp"
+        android:src="@drawable/person_ic_arrow_right" />
+
+    </RelativeLayout>
+
+</LinearLayout>

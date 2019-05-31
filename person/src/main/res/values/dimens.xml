@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="person_item_height">55dp</dimen>
+    <dimen name="person_item_margin_left_right">15dp</dimen>
+    <dimen name="person_item_margin_top">8dp</dimen>
+    <dimen name="person_item_icon_width">25dp</dimen>
+    <dimen name="person_item_icon_padding_left">10dp</dimen>
+    <dimen name="person_item_arrow_width">15dp</dimen>
+    <dimen name="person_item_word_margin_left">20dp</dimen>
+</resources>

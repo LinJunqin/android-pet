@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lin.goods">
+
+    <application android:name="com.lin.baselib.base.BaseApplication"
+    android:allowBackup="true"
+        android:icon="@drawable/app_ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+        tools:replace="android:theme"
+    android:theme="@style/AppBaseTheme"
+    >
+    <!--<activity android:name=".debug.DebugActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">-->
+    <!--<intent-filter>-->
+    <!--<action android:name="android.intent.action.MAIN" />-->
+
+    <!--<category android:name="android.intent.category.LAUNCHER" />-->
+    <!--</intent-filter>-->
+    <!--</activity>-->
+        <activity android:name=".activity.GoodsDetailActivity"/>
+        <activity android:name=".activity.GoodsOrderActivity"/>
+        <activity android:name=".activity.PaymentActivity"/>
+        <activity android:name=".activity.PayResultActivity"/>
+        <activity android:name=".activity.SearchActivity"/>
+        <activity android:name=".activity.SearchResultActivity"/>
+    </application>
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--相对距离-->
+    <dimen name="margin_top_3dp">3dp</dimen>
+    <dimen name="margin_top_8dp">8dp</dimen>
+    <dimen name="margin_top_20dp">20dp</dimen>
+    <!--图标控件相同位置统一大小-->
+    <dimen name="tab_iv_height">27dp</dimen>
+    <dimen name="tab_iv_width">27dp</dimen>
+
+    <dimen name="scan_iv_height">35dp</dimen>
+    <dimen name="scan_iv_width">47dp</dimen>
+
+    <dimen name="nav_height_60dp">60dp</dimen>
+</resources>

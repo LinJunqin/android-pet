@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_height_60dp"
+    android:background="@drawable/binary_circle_angle"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        android:id="@+id/re_home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="@dimen/tab_iv_width"
+            android:layout_height="@dimen/tab_iv_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/app_home_selected"/>
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_home"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_top_3dp"
+            android:textColor="@color/blue"
+            android:text="@string/tab_title_home"
+            android:textSize="@dimen/very_small_word" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_hospital"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/iv_hospital"
+            android:layout_width="@dimen/tab_iv_width"
+            android:layout_height="@dimen/tab_iv_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_top_8dp"
+            android:src="@drawable/app_hospital_unselected"/>
+
+        <TextView
+            android:id="@+id/tv_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hospital"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_top_3dp"
+            android:text="@string/tab_title_hospital"
+            android:textColor="@color/word_theme_color"
+            android:textSize="@dimen/very_small_word" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_mine"
+            android:layout_width="@dimen/tab_iv_width"
+            android:layout_height="@dimen/tab_iv_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_top_8dp"
+            android:src="@drawable/app_mine_unselected"/>
+
+        <TextView
+            android:id="@+id/tv_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_mine"
+            android:layout_centerInParent="true"
+           android:layout_marginTop="@dimen/margin_top_3dp"
+            android:text="@string/tab_title_mine"
+            android:textColor="@color/word_theme_color"
+            android:textSize="@dimen/very_small_word" />
+
+    </RelativeLayout>
+
+</LinearLayout>

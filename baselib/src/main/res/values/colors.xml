@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#3366cc</color>
+
+    <!--字体颜色-->
+    <color name="word_theme_color">#898989</color>
+    <color name="word_deep_theme_color">#535353</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="orange">#E58011</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#3366cc</color>
+    <!--边框颜色-->
+    <color name="search_border_color">#585757</color>
+    <color name="border_color">#B4B4B5</color>
+    <color name="orange_border_color">#FF422A</color>
+    <color name="tag_normal">#F5F5F5</color>
+    <color name="tag_pressed">#a7a7a7</color>
+
+    <color name="transparent">#00000000</color>
+</resources>

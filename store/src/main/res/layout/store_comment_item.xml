@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_user"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/store_avatar_default" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/civ_user"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="x博士"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/civ_user"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:padding="5sp"
+        android:text="2019-5-10 19:00:00"
+        android:textColor="#9c9c9c"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/civ_user"
+        android:layout_below="@+id/tv_username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="书是人类的生活中不可缺少的一位好朋友;读书也是人类生活中不可缺少的事，好的读书名言，促进学习的进步，知识的掌握，避免走弯路，利于成功。作品简介读书名言属于适合任何人群进行读书规律指导的心得体会，原创人多为历代著名的成功人士或名人，对后人具有积极的影响"
+        />
+
+</RelativeLayout>

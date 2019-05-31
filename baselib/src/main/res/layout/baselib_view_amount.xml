@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:showDividers="middle"
+    android:orientation="horizontal">
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnDecrease"
+        android:layout_width="20dp"
+        android:layout_height="21dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/baselib_delete"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/etAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="9dp"
+        android:layout_marginLeft="9dp"
+        android:background="@null"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#FF7F24"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/btnIncrease"
+        android:layout_width="20dp"
+        android:layout_height="21dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/baselib_add"/>
+</LinearLayout>
